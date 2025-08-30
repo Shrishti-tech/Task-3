@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0077b6;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0077b6;
+    }
+
+    /* About Section */
+    #about img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 50%;
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    /* Skills Section */
+    #skills ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+
+    #skills ul li {
+      background: #0077b6;
+      color: white;
+      margin: 10px;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    /* Projects Section - Grid */
+    #projects ol {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      list-style-position: inside;
+    }
+
+    #projects li {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Contact Section */
+    #contact p {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0077b6;
+      color: white;
+    }
+
+    /* =========================
+       Responsive Design (Week 3)
+    ========================== */
+    @media (max-width: 768px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        display: block;
+        margin: 5px 0;
+      }
+
+      section {
+        padding: 20px 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      #skills ul li {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+      }
+
+      #projects li {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! My name is Shrishti Dixit. I am learning front-end development and this is my portfolio website.</p>
+    <img src="Shriiiiphoto.jpg" alt="Shrishti Photo">
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Responsive Design</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <ol>
+      <li>Simple Webpage with HTML</li>
+      <li>Portfolio Website (this one!)</li>
+      <li>Upcoming: Number Guessing Game</li>
+    </ol>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:shrishti@example.com">shrishti@example.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
